@@ -15,15 +15,7 @@
     font-weight: normal;
   }
   
-  /* The navigation menu links */
-  .leftsidenav a {
-    margin-left: 8px;
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #fff;
-    display: block;
-  }
+
   
   /* The right sidebar menu */
   .rightsidenav {
@@ -40,6 +32,20 @@
     font-style: normal;
     font-variant-caps: normal;
     font-weight: normal;
+  }
+  
+  /* The navigation menu links */
+  .leftsidenav a {
+      margin-left: 8px;
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #fff;
+      display: block;
+    }
+  
+  .leftsidenav a:hover {
+    color: #f1f1f1;
   }
   
   .main {
@@ -88,4 +94,29 @@
     position: absolute; /* Fixed Sidebar (stay in place on scroll) */
     bottom: 0; /* Stay at the bottom */
     left: 50%;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+  background-color: #dddddd;
+  }
+  
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
   }
