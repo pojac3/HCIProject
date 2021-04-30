@@ -2,7 +2,7 @@
   .leftsidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
     width: 208px; /* Set the width of the sidebar */
-    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     top: 0; /* Stay at the top */
     left: 0;
     background-color: #841617; /* Crimson */
@@ -21,7 +21,7 @@
   .rightsidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
     width: 208px; /* Set the width of the sidebar */
-    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     top: 0; /* Stay at the top */
     right: 0;
     background-color: #fff; /* Crimson */
@@ -96,6 +96,15 @@
     left: 50%;
   }
   
+  .map {
+    margin-left: 208px;
+    margin-right: 208px;
+  }
+  
+  .logo {
+    margin-left: 16px;
+  }
+  
   h2 {
     text-align: center;
   }
@@ -120,3 +129,4 @@
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+  
