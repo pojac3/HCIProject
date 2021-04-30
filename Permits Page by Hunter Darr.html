@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #990000;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+<img src="https://tailgateguys.com/storage/2019/06/24/67b652d9475e8d8bd1d5e9b87b0ade7a282b9729.png" height="70" width="50" alt="OU Logo">  
+<a href="#about">Home</a>
+  <a href="#services">Citations</a>
+  <a href="#clients">Permits</a>
+  <a href="#contact">Maps</a>
+</div>
+
+<div class="main">
+  <h2>Permits</h2>
+  
+  <div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openTab('Your')">Your Permits</button>
+  <button class="w3-bar-item w3-button" onclick="openTab('All')">All Permits</button>
+</div>
+
+<div id="Your" class="w3-container city">
+  <h2>Your Permits</h2>
+  
+    <form name="form1" id="form1" action="/action_page.php"> 3 Permits, 1 Active
+<select name="subject" id="subject">
+    <option value="" selected="selected">2020-2021</option>
+  </select>
+  <br><br>
+
+<table>Selected Permits
+  <tr>
+    <th>Type</th>
+    <th>Status</th>
+    <th>Issue Date</th>
+	<th>Effective Date</th>
+    <th>Expiration Date</th>
+    <th>Permit Number</th>
+
+  </tr>
+  <tr>
+    <td>Commuter</td>
+	<td>Active</td>
+    <td>1/1/1111</td>
+    <td>1/1/1111</td>
+    <td>1/1/1111</td>
+    <td>11111111</td>
+
+  </tr>
+</table>
+
+</div>
+
+<div id="All" class="w3-container city" style="display:none">
+  <h2>All Permits</h2>
+  
+  <form name="form1" id="form1" action="/action_page.php"> 6 Available, 1 Purchased
+<select name="subject" id="subject">
+    <option value="" selected="selected">2020-2021</option>
+  </select>
+  <br><br>
+
+<table>Selected Permits
+  <tr>
+    <th>Type</th>
+    <th>Status</th>
+    <th>Issue Date</th>
+	<th>Effective Date</th>
+    <th>Expiration Date</th>
+    <th>Permit Number</th>
+    <th>Purchase</th>
+  </tr>
+  <tr>
+    <td>Commuter</td>
+	<td>Active</td>
+    <td>1/1/1111</td>
+    <td>1/1/1111</td>
+    <td>1/1/1111</td>
+    <td>11111111</td>
+	<td>  <button>View</button></td>
+  </tr>
+  <tr>
+    <td>Evening</td>
+	<td>Deactive</td>
+    <td>1/1/1111</td>
+    <td>1/1/1111</td>
+    <td>1/1/1111</td>
+    <td>11111111</td>
+	<td>  <button>Purchase</button></td>
+
+  </tr>
+  <tr>
+    <td>Housing</td>
+	<td>Deactive</td>
+    <td>1/1/1111</td>
+    <td>1/1/1111</td>
+    <td>1/1/1111</td>
+    <td>11111111</td>
+	<td>  <button>Purchase</button></td>
+
+  </tr>
+  <tr>
+    <td>Law School</td>
+	<td>Deactive</td>
+    <td>1/1/1111</td>
+    <td>1/1/1111</td>
+    <td>1/1/1111</td>
+    <td>11111111</td>
+	<td>  <button>Purchase</button></td>
+
+  </tr>
+  <tr>
+    <td>Motorcycle</td>
+	<td>Deactive</td>
+    <td>1/1/1111</td>
+    <td>1/1/1111</td>
+    <td>1/1/1111</td>
+    <td>11111111</td>
+	<td>  <button>Purchase</button></td>
+
+  </tr>
+  <tr>
+    <td>Parkview</td>
+	<td>Deactive</td>
+    <td>1/1/1111</td>
+    <td>1/1/1111</td>
+    <td>1/1/1111</td>
+    <td>11111111</td>
+	<td>  <button>Purchase</button></td>
+
+  </tr>  
+</table>
+
+</div>
+
+</div>
+
+
+
+
+
+<script>
+function openTab(Name) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(Name).style.display = "block";  
+}
+</script>
+
+
+
+   
+</body>
+</html> 
