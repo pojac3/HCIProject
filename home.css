@@ -1,0 +1,74 @@
+  /* The sidebar menu */
+  .sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 208px; /* Set the width of the sidebar */
+    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #841617; /* Crimson */
+    overflow-x: hidden;  /*Disable horizontal scroll */
+    padding-top: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-weight: normal;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    margin-left: 8px;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+  }
+  
+  .main {
+    margin-left: 208px;
+    margin-right: 208px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    text-align: left;
+    z-index: 0;
+  }
+  
+  .abstract {
+    margin-left: 208px;
+    margin-right: 208px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    text-align: left;
+    z-index: 0;
+  }
+  
+  .heading {
+    margin-left: 208px;
+    margin-right: 208px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-style: bold;
+    text-align: left;
+    z-index: 0;
+  }
+  
+  .title {
+    margin-left: 208px;
+    margin-right: 208px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 48px;
+    font-style: bold;
+    text-align: left;
+    z-index: 0;
+  }
+  .footer {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    text-align: center;
+    z-index: 0;
+    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+    bottom: 0; /* Stay at the bottom */
+    left: 50%;
+  }
