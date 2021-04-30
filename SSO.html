@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-----NO CSS because the Single Sign On page is a completely different layout----->
         <style>
             .main {
                 width: 394px;
@@ -18,7 +19,7 @@
                 padding: 30px;
                 text-align: center;
             }
-
+            <!-----Used for OU logo----->
             .logo {
                 width: 58px;
                 height: 80px;
@@ -26,7 +27,7 @@
                 background: white;
                 padding: 10px 0 0 0;
             }
-
+            <!-----Used for the main header----->
             .header {
                 text-align: center;
                 color: #525466;
@@ -43,7 +44,7 @@
                 margin-inline-start: 0px;
                 margin-inline-end: 0px;
             }
-
+            <!-----Used for the subheader----->
             .subheader {
                 text-align: center;
                 color: #525466;
@@ -54,8 +55,8 @@
                 font-family: Open Sans;
                 font-weight: 400;
             }
-
-            .username {
+            <!-----Used for text fields----->
+            .textEntry {
                 background: #fff;
                 border: solid 1px #ebecf0;
                 outline: none;
@@ -81,7 +82,8 @@
                 display: inline-block;
                 text-align: start;
             }
-
+            
+            <!-----Used for sign in button----->
             .sign_in {
                 letter-spacing: normal;
                 word-spacing: normal;
@@ -111,7 +113,7 @@
                 -webkit-appearance: none;
                 -webkit-writing-mode: horizontal-tb
             }
-
+            <!-----Used for the forgot password button----->
             .forgotPass {
                 font-weight: 400;
                 font-family: Open Sans;
@@ -127,7 +129,7 @@
                 margin: 0 auto;
                 float: none;
             }
-
+            <!-----Used for the forgot OUNetID Button----->
             .forgotID {
                 font-weight: 400;
                 font-family: Open Sans;
@@ -140,7 +142,7 @@
                 margin: 0 auto;
                 float: none;
             }
-
+            <!-----Used for the new student portal----->
             .new {
                 font-weight: 400;
                 font-family: Open Sans;
@@ -159,8 +161,8 @@
                 <img class="logo"src="logo.png"></img>
                 <h1 class = "header">One account. One university.</h1>
                 <h2 class = "subheader">Sign in to One using your OU Email or OUNetID.</h2>
-                <input class = "username" placeholder="OU Email or OUNetID"></input>
-                    <input class = "username" placeholder="Password"></input>
+                <input class = "textEntry" placeholder="OU Email or OUNetID"></input>
+                    <input class = "textEntry" placeholder="Password"></input>
                     <a href="home.html">
                         <button class = "sign_in" value="Sign In">Sign In</button>
                     </a>
